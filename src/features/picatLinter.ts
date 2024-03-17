@@ -41,7 +41,6 @@ export default class PicatLinter implements CodeActionProvider {
 
   private outputMsg(msg: string) {
     this._outputChannel.append(msg + "\n");
-    this._outputChannel.show(true);
   }
   private loadConfiguration(): void {
     let section = workspace.getConfiguration("picat");
